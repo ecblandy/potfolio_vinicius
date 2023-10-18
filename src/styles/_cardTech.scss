@@ -1,0 +1,89 @@
+.cardTech {
+    background-color: #000000;
+    color: #fff;
+    padding: 60px;
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 60px;
+
+        &__item {
+                cursor: pointer;
+                position: relative;
+                padding: 10px;
+                display: grid;
+                gap: 30px;
+                text-align: center;
+                max-width: 250px;
+                width: 100%;
+                background-color: rgb(32, 29, 29);
+                height: 300px;
+                border-radius: 6px;
+                align-content: center;
+                
+                &::before {
+                    content: '';
+                    width: 0px;
+                    height: 0px;
+                    position: absolute;
+                    transition: .5s ease-in-out;
+                    top: -2px;
+                    right: -2px;
+                    border-top: 2px solid transparent;
+                    border-right: 2px solid transparent;
+                    border-radius: 8px;
+                }
+
+                &::after {
+                    content: '';
+                    width: 0px;
+                    height: 0px;
+                    position: absolute;
+                    transition: .5s ease-in-out;
+                    bottom: -2px;
+                    left: -2px;
+                    border-left: 2px solid transparent;
+                    border-bottom: 2px solid transparent;
+                    border-radius: 8px;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                    height: 100%;
+                    border-top: 2px solid red;
+                    border-right: 2px solid red;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    height: 100%;
+                    border-bottom: 2px solid red;
+                    border-left: 2px solid red;
+                }
+
+
+                &__title {
+                    h3 {
+                        font-size: 2rem;
+                        padding: 10px 0;
+                        text-transform: uppercase;
+                    }
+                    i{
+                        font-size: 4rem;
+                    }
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

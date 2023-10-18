@@ -1,3 +1,48 @@
-body {
-    background-color: black;
+@use '_reset';
+@use '_header';
+@use '_home';
+@use '_cardTech';
+@use '_variaveis';
+@mixin title($fontSize: 16px){
+    font-size: $fontSize;
+}
+
+@mixin titleSection {
+    text-align: center;
+    padding-top: 60px;
+
+    h2 {
+        font-size: 2.5rem;
+        color: variaveis.$corPrincipal;
+        margin-bottom: 15px;
+    }
+
+    p {
+        color: #707070;
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+        position: relative;
+    }
+
+    div {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    span {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: variaveis.$corPrincipal;
+    }
+}
+
+.titleSection {
+    @include titleSection()
+}
+
+
+.title {
+    @include title(2.5rem)
 }

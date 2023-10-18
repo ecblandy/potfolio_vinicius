@@ -1,12 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/main.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./public/css/main.min.css">
+    <title>VB - Portfolio</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <h1 class="title">Vinicius <span>Blandy</span></h1>
+            </div>
+
+            <div class="navbar__hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <ul aria-label="Menu barra de navegação" class="navbar__list">
+                <li class="navbar__list__item"><a href="#">Home</a></li>
+                <li class="navbar__list__item"><a href="#">Tech</a></li>
+                <li class="navbar__list__item"><a href="#">About</a></li>
+                <li class="navbar__list__item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home__conteudo">
+            <h2>Eu sou:</h2>
+            <h2 class="digitando">Desenvolvedor Web</h2>
+            <p>Sempre fui apaixonado por tecnologia, mas meu primeiro contato com a programação foi através do YouTube.
+                A partir daí, foi amor à primeira vista com o "Hello World". Em 08/03/2023, comecei a estudar na EBAC -
+                Escola de Artes Criativas e Tecnologia no curso de Engenharia Frontend. Também tenho estudado outras
+                áreas, como o backend, incluindo banco de dados MySQL, Node.js e diversas outras tecnologias.</p>
+            <button><a href="#">Download CV</a></button>
+        </div>
+
+        <img src="./public/img/myphoto1.jpg" alt="">
+    </section>
+
+    <section class="cardTech" id="cardTech">
+        <div class="titleSection">
+            <h2>Minhas Tech</h2>
+            <p>Algumas das Tech que tenho conhecimentos.</p>
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="cardTech__box">
+            <div class="cardTech__box__item">
+                <div class="cardTech__box__item__title">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>Html</h3>
+                    <p>
+                        Tenho usado desde o começo do curso, conhecendo bastante sobre semântica e acessibilidade.
+                    </p>
+                </div>
+                <ul aria-label="Lista do nivel de Tecnologia.">
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+
+            <div class="cardTech__box__item">
+                <div class="cardTech__box__item__title">
+                    <i class="fa-brands fa-square-js"></i>
+                    <h3>Javascript</h3>
+                    <p>
+                        Consigo desenvolver sem muitas dificuldades, mas ainda tenho estudado bastante.
+                    </p>
+                </div>
+                <ul aria-label="Lista do nivel de Tecnologia.">
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+
+            <div class="cardTech__box__item">
+                <div class="cardTech__box__item__title">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>Css</h3>
+                    <p>
+                        Uso desde o início do curso e agora estudo transformações e animações de keyframes.
+                    </p>
+                </div>
+                <ul aria-label="Lista do nivel de Tecnologia.">
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+
+            <div class="cardTech__box__item">
+                <div class="cardTech__box__item__title">
+                    <i class="fa-brands fa-sass"></i>
+                    <h3>Sass</h3>
+                    <p>
+                        Adotei como meu pré-processador CSS favorito e tenho desenvolvido muito nele desde então.
+                    </p>
+                </div>
+                <ul aria-label="Lista do nivel de Tecnologia.">
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+
+            <div class="cardTech__box__item">
+                <div class="cardTech__box__item__title">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h3>Bootstrap</h3>
+                    <p>
+                        Tenho conhecimento, mas preferi aprender CSS para evitar dependência de bibliotecas.
+                    </p>
+                </div>
+                <ul aria-label="Lista do nivel de Tecnologia.">
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+
+            <div class="cardTech__box__item">
+                <div class="cardTech__box__item__title">
+                    <i class="fa-brands fa-less"></i>
+                    <h3>Less</h3>
+                    <p>
+                        Assim como SASS, sei utilizar e desenvolvi projetos que o utilizam perfeitamente.
+                    </p>
+                </div>
+                <ul aria-label="Lista do nivel de Tecnologia.">
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+
+            <div class="cardTech__box__item">
+                <div class="cardTech__box__item__title">
+                    <i class="fa-brands fa-gulp"></i>
+                    <h3>Gulp</h3>
+                    <p>
+                        É meu automatizador de tarefas favorito; desde que aprendi, desenvolvi quase todos os projetos
+                        com ele.
+                    </p>
+                </div>
+                <ul aria-label="Lista do nivel de Tecnologia.">
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+
+            <div class="cardTech__box__item">
+                <div class="cardTech__box__item__title">
+                    <i class="fa-brands fa-grunt"></i>
+                    <h3>Grunt</h3>
+                    <p>
+                        Não gostei muito da sintaxe e, por isso, optei pelo Gulp, mas também sei utilizá-lo.
+                    </p>
+                </div>
+                <ul aria-label="Lista do nivel de Tecnologia.">
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+
+            <div class="cardTech__box__item">
+                <div class="cardTech__box__item__title">
+                    <img src="./public/img/icons8-jquery.svg" alt="">
+                    <h3>Jquery</h3>
+                    <p>
+                        Assim como o Bootstrap, não quis depender de bibliotecas, mas sei utilizá-lo tranquilamente.
+                    </p>
+                </div>
+                <ul aria-label="Lista do nivel de Tecnologia.">
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+
+            <div class="cardTech__box__item">
+                <div class="cardTech__box__item__title">
+                    <img src="./public/img/icons8-typescript-80.svg" alt="">
+                    <h3>TypeScript</h3>
+                    <p>
+                        Tenho começado a incluir nos projetos agora, mas não tenho dificuldades.
+                    </p>
+                </div>
+                <ul aria-label="Lista do nivel de Tecnologia.">
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+
+            <div class="cardTech__box__item">
+                <div class="cardTech__box__item__title">
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React</h3>
+                    <p>
+                        Estou estudando React no curso atualmente, e, embora saiba usá-lo, ainda estou em
+                        desenvolvimento.
+                    </p>
+                </div>
+                <ul aria-label="Lista do nivel de Tecnologia.">
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+
+            <div class="cardTech__box__item">
+                <div class="cardTech__box__item__title">
+                    <i class="fa-brands fa-vuejs"></i>
+                    <h3>Vue</h3>
+                    <p>
+                        Estou estudando Vue no curso atualmente, e, embora saiba usá-lo, ainda estou em desenvolvimento.
+                    </p>
+                </div>
+                <ul aria-label="Lista do nivel de Tecnologia.">
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+
+            <div class="cardTech__box__item">
+                <div class="cardTech__box__item__title">
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>Ajax</h3>
+                    <p>
+                        Sei fazer requisições API e, atualmente, estudo backend para aprender sobre APIs RESTful.
+                    </p>
+                </div>
+                <ul aria-label="Lista do nivel de Tecnologia.">
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+
+            <div class="cardTech__box__item">
+                <div class="cardTech__box__item__title">
+                    <img src="./public/img/icons8-config.svg" alt="">
+                    <h3>Cypress</h3>
+                    <p>Ainda não aprendi, mas logo irei entrar nesse modulo.</p>
+                </div>
+                <ul aria-label="Lista do nivel de Tecnologia.">
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+
+            <div class="cardTech__box__item">
+                <div class="cardTech__box__item__title">
+                    <i class="fa-brands fa-node"></i>
+                    <h3>Node</h3>
+                    <p>
+                        Tenho usado desde o início do curso e, agora que estudo backend, utilizo com frequência.
+                    </p>
+                </div>
+                <ul aria-label="Lista do nivel de Tecnologia.">
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+
+            <div class="cardTech__box__item">
+                <div class="cardTech__box__item__title">
+                    <img src="./public/img/icons8-mysql.svg" alt="">
+                    <h3>Mysql</h3>
+                    <p>
+                        Comecei a estudar recentemente e tenho usado com Express, Handlebars e Sequelize.
+                    </p>
+                </div>
+                <ul aria-label="Lista do nivel de Tecnologia.">
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <script src="./public/script/main.min.js"></script>
 </body>
+
 </html>
