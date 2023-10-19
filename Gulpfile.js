@@ -27,3 +27,7 @@ function compilaImg(){
 
 
 exports.default = gulp.parallel(compilaJavascript, compilaSass, compilaImg)
+exports.watch = ()=>{
+    gulp.watch('./src/scripts/*.js', gulp.parallel(compilaJavascript)) 
+    gulp.watch('./src/styles/*.scss', gulp.parallel(compilaSass))
+}
