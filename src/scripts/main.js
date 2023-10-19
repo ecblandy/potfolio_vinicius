@@ -6,7 +6,8 @@ const list = document.querySelectorAll('.navbar__list__item') // Li dentro do ul
 // Quando o menu for clicado
 hamburger.addEventListener('click', (e) => {
     const target = e.target
-    target ? menu.classList.toggle('menu--active') : ''
+    hamburger.classList.toggle('active')
+    target ? menu.classList.toggle('active') : ''
     list.forEach((item, index) => {
         item.style.animation ? item.style.animation = '' : item.style.animation = `fadeMenu 0.5s ease-in forwards ${index / 7 + 0.3}s`
     })
@@ -15,7 +16,7 @@ hamburger.addEventListener('click', (e) => {
 // Verifica o scroll para esconder o menu e animação
 document.addEventListener('scroll', () => {
     if (window.scrollY >= 576) {
-        menu.classList.remove('menu--active')
+        menu.classList.remove('active')
         list.forEach(item =>{
             item.style.animation = ''
         })
