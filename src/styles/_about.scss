@@ -1,0 +1,150 @@
+@use '_variaveis';
+
+main {
+    background-color: rgb(29, 23, 23);
+
+    .sobre__titulo {
+        text-align: center;
+        padding: 60px 60px 0 60px;
+
+        h2 {
+            font-size: 2.5rem;
+            color: variaveis.$corPrincipal;
+            margin-bottom: 15px;
+
+        }
+
+        p {
+            color: #707070;
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+            position: relative;
+        }
+
+        div {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        span {
+            display: block;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: variaveis.$corPrincipal;
+        }
+    }
+
+    .sobre {
+        display: flex;
+        padding: 60px;
+        gap: 40px;
+
+        @media (max-width:990px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            cursor: pointer;
+            max-width: 400px;
+            width: 100%;
+            height: 600px;
+            border-radius: 4px;
+            filter: blur(0);
+            animation: ladoSecao .5s ease-in-out forwards;
+
+            &:hover {
+                transition: .5s ease-in;
+                filter: blur(1px);
+            }
+        }
+
+        &__conteudo {
+            color: #707070;
+            animation: sobreSecao .6s ease-in-out forwards;
+            margin-top: 80px;
+
+            &__texto {
+                font-size: 2.2rem;
+
+                h3 {
+                    font-size: 2.3rem;
+                    color: variaveis.$corTextoPrincipal;
+
+                    @media (max-width:990px) {
+                        text-align: center;
+                        font-size: 1.6rem;
+                    }
+
+                    &::after {
+                        background-color: variaveis.$corPrincipal;
+                        height: 6px;
+                        width: 60px;
+                        margin: 20px 0;
+                        content: '';
+                        display: flex;
+                        border-radius: 5px;
+
+                    }
+                }
+
+                p {
+                    font-size: 1.3rem;
+
+                    @media (max-width:990px) {
+                        padding-top: 20px;
+                    }
+                }
+            }
+
+            &__info {
+                margin-top: 30px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column: 1/-1;
+                gap: 15px;
+                align-items: center;
+
+                @media (max-width:990px) {
+                    grid-template-columns: 1fr;
+                }
+
+                i {
+                    color: variaveis.$corPrincipal;
+                    display: inline-block;
+                    padding-right: 15px;
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+
+    }
+}
+
+@keyframes sobreSecao {
+    from {
+        transform: translate3d(60px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+@keyframes ladoSecao {
+    from {
+        transform: translate3d(-60px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}

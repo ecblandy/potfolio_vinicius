@@ -1,0 +1,165 @@
+@use '_variaveis';
+.portfolio {
+    background-color: rgb(31, 17, 17);
+    color: variaveis.$corTextoPrincipal;
+    padding: 60px 140px;
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+
+    &__projects {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        @media (max-width: 700px){
+           flex-direction: column;
+           align-items: center;
+        }
+        button {
+            background-color: #222;
+            position: relative;
+            width: 140px;
+            height: 60px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            z-index: 1;
+            border: 1px solid #333;
+            color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .9s ease-in-out;
+            &.active{
+                background-color: variaveis.$corPrincipal;
+            }
+            
+            &::after {
+                background-color: variaveis.$corPrincipal;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: transform .4s ease-in;
+                border-radius: 30px 0;
+                transform: scaleY(0);
+                transform-origin: bottom;
+                z-index: -1;
+            }
+
+            &:hover::after {
+                transform: scaleY(1);
+            }
+        }
+    }
+
+    &__armazenamento {
+        &__list {
+            display: flex;
+            margin-top: 100px;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            @media (max-width: 700px){
+                flex-direction: column;
+                align-items: center;
+            }
+
+            & li:hover{
+                background-color: variaveis.$corPrincipal;
+                
+            }
+
+            &__item {
+                background-color: #381e1e;
+                height: 500px;
+                max-width: 400px;
+                width: 100%;
+                text-align: center;
+                border-radius: 10px;
+                transition: transform ease-in-out .2s;
+                padding: 10px;
+                border: 4px solid black;
+                
+                @media (max-width: 700px){
+                    width: 280px;
+                    height: 550px;
+                }
+
+                 &:hover{
+                    transform: scale(1.02);
+                }
+
+                img {
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 10px;
+                    object-fit: cover;
+                    &:hover{
+                        filter: blur(1px);
+                    }
+                }
+
+                .conteudo {
+                    padding: 10px;
+
+                    p {
+                        margin-top: 15px;
+                        font-size: 14px;
+                        width: 100%;
+                        margin-bottom: 40px;
+                    }
+
+                    h2 {
+                        font-size: 20px;
+                    }
+
+                   a{
+                    color: variaveis.$corTextoPrincipal;
+                    background-color: variaveis.$preto100;
+                    padding: 10px 20px;
+                    border-radius: 8px;
+                   }
+                }
+
+                .conteudo__info {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 30px;
+                    font-size: 15px;
+                    @media (max-width: 700px){
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@keyframes animaImg {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -90px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+@keyframes teste {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -90px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}

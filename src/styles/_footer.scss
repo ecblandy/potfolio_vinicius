@@ -1,0 +1,46 @@
+.footer {
+    background-color: #0f0000;
+    padding: 30px;
+
+    &__sociais{
+        display: flex;
+        color: #fff;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 5px;
+            width: 200px;
+            bottom: -30px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        li {
+            background-color: black;
+            border-radius: 50%;            
+            border: 1px solid #fff;
+            padding: 30px;
+            &:hover{
+                transition: .3s ease-in-out;
+                cursor: pointer;
+                background-color: red;
+            }
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__comercial {
+        text-align: center;
+        color: #fff;
+        margin: 90px auto;
+        font-size: 1.5rem;
+    }
+}

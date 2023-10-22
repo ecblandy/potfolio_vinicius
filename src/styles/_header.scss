@@ -10,7 +10,10 @@
 
     h1{
         color: variaveis.$corSecundaria;
-        font-size: 1.7rem;
+        font-size: 2.5rem;
+        @media (max-width:700px){
+            font-size: 1.7rem;
+        }
         span {
             color: variaveis.$corPrincipal;
         }
@@ -75,12 +78,15 @@
             display: none;
             z-index: 1;
         }
+        &.active {
+            display: flex;
+        }
         li {
             @media (max-width: 700px){
                 opacity: 0;
             }
             a{
-                font-size: 1.3rem;
+                font-size: 1.5rem;
                 letter-spacing: 2px;
                 color: variaveis.$corSecundaria;
                 font-weight: 600;
@@ -106,10 +112,6 @@
     }
 }
 
-
-.navbar__list.active{
-    display: flex;
-}
 
 
 @keyframes fadeMenu {

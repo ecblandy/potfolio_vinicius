@@ -1,9 +1,11 @@
 @use '_variaveis';
 .cardTech {
-    background-color: #000000;
+    background-color: #0f0e0e;
     color: variaveis.$corTextoPrincipal;
     padding: 60px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &__box {
         display: flex;
         flex-wrap: wrap;
@@ -15,16 +17,20 @@
         &__item {
                 cursor: pointer;
                 position: relative;
-                padding: 10px;
+                padding: 20px;
                 display: grid;
                 gap: 30px;
                 text-align: center;
-                max-width: 250px;
+                max-width: 300px;
                 width: 100%;
                 background-color: rgb(32, 29, 29);
-                height: 300px;
+                height: 370px;
                 border-radius: 6px;
                 align-content: center;
+                transition: transform ease-in-out .4s;
+                &:hover{
+                    transform: scale(1.04);
+                }
                 
                 &::before {
                     content: '';
@@ -68,16 +74,18 @@
 
 
                 &__title {
+                    display: block;
                     h3 {
-                        font-size: 2rem;
+                        font-size: 1.7rem;
                         padding: 10px 0;
                         text-transform: uppercase;
                     }
                     i{
-                        font-size: 4rem;
+                        font-size: 3rem;
                     }
                     p {
-                        font-size: 0.8rem;
+                        font-size: 0.9rem;
+                        width: 100%;
                     }
                 }
         }

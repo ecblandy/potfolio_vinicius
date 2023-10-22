@@ -199,7 +199,7 @@
                     <img src="./public/img/icons8-jquery.svg" alt="">
                     <h3>Jquery</h3>
                     <p>
-                        Assim como o Bootstrap, não quis depender de bibliotecas, mas sei utilizá-lo tranquilamente.
+                        Não quis depender de bibliotecas, mas sei utilizá-lo tranquilamente.
                     </p>
                 </div>
                 <ul aria-label="Lista do nivel de Tecnologia.">
@@ -328,9 +328,118 @@
                     <li><i class="fa-sharp fa-regular fa-star"></i></li>
                 </ul>
             </div>
-
         </div>
+        <button class="btn">Carregar mais</button>
     </section>
+
+    <main>
+        <div class="sobre__titulo">
+            <h2>Sobre mim</h2>
+            <p>Perfil profissional - Aqui está tudo sobre mim.</p>
+            <div aria-label="seção apenas de ilustração">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <article aria-label="seção sobre mim" class="sobre">
+            <img src="./public/img/myphoto2.jpg"
+                alt="">
+
+            <div class="sobre__conteudo">
+                <div class="sobre__conteudo__texto">
+                    <h3>Eu sou Vinícius Blandy</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ipsa quasi aliquid, fugiat
+                        recusandae voluptatem exercitationem alias, culpa hic odio adipisci tempore officia similique
+                        perferendis fugit. Dolore, dolor deleniti. Ut.</p>
+                </div>
+
+                <div class="sobre__conteudo__info">
+                    <p><i class="fa-solid fa-calendar-days"></i>Data de nascimento: 08 março 1999.</p>
+                    <p><i class="fa-sharp fa-solid fa-laptop-code"></i>Freelance: disponível.</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Endereço: Salvador-BA, Brasil.</p>
+                    <p><i class="fa-solid fa-solid fa-globe"></i>Línguas faladas: Português e Inglês.</p>
+                    <p><i class="fa-solid fa-flag"></i>Nacionalidade: Brasileiro.</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>Telefone: 71994027893</p>
+                    <p><i class="fa-solid fa-envelope"></i>Email: devblandy@hotmail.com</p>
+                </div>
+
+            </div>
+
+        </article>
+    </main>
+    
+    <section class="portfolio" id="projects">
+        <div class="titleSection">
+            <h2>Projetos</h2>
+            <p>Alguns dos projetos que realizei que considero bons.</p>
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="portfolio__projects">
+            <button class="projectbutton active" id="todos">Todos</button>
+            <button class="projectbutton" id="frontend">Frontend</button>
+            <button class="projectbutton" id="backend">Backend</button>
+        </div>
+
+        <div class="portfolio__armazenamento">
+            <ul class="portfolio__armazenamento__list">
+                <li class="portfolio__armazenamento__list__item frontend active">
+                    <a href="#"><img src="https://images.unsplash.com/photo-1697179419515-36178e22626e?auto=format&fit=crop&q=80&w=1483&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""></a>
+                        <div class="conteudo">
+                            <h2>Disney +</h2>
+                            <p>Desenvolvi um clone da Disney + ultilizando sass, gulp, javascript.</p>
+                            <a href="#">Link Github</a>
+                        </div>
+                        <div class="conteudo__info">
+                            <span><i class="fa-solid fa-calendar-days"></i>10/08/2023</span>
+                            <span><i class="fa-solid fa-user"></i>Vinícius Blandy</span>
+                        </div>
+                </li>
+
+                <li class="portfolio__armazenamento__list__item frontend active">
+                    <a href="#"><img src="https://images.unsplash.com/photo-1697179419515-36178e22626e?auto=format&fit=crop&q=80&w=1483&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""></a>
+                        <div class="conteudo">
+                            <h2>Calculadora IMC</h2>
+                            <p>Desenvolvi esse projeto ultilizando React, calcula o IMC e exibe na tabela.</p>
+                            <a href="#">Link Github</a>
+                        </div>
+                        <div class="conteudo__info">
+                            <span><i class="fa-solid fa-calendar-days"></i>10/08/2023</span>
+                            <span><i class="fa-solid fa-user"></i>Vinícius Blandy</span>
+                        </div>
+                </li>
+
+            </ul>
+        </div>
+        <button class="btn">Carregar mais</button>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="titleSection">
+            <h2>Redes Sociais</h2>
+            <p>Minhas redes socias para contato.</p>
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <nav>
+            <ul aria-label="Navegação de links sociais" class="footer__sociais">
+                <li><i class="fa-brands fa-linkedin-in"><a href="#"></a></i></li>
+                <li><i class="fa-brands fa-github-alt"><a href="#"></a></i></li>
+            </ul>
+        </nav>
+        <p class="footer__comercial">Todos os direitos reservados Vinicius Blandy &copy; - 2023</p>
+    </footer>
     <script src="./public/script/main.min.js"></script>
 </body>
 

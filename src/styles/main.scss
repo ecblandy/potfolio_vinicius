@@ -3,13 +3,19 @@
 @use '_home';
 @use '_cardTech';
 @use '_variaveis';
-@mixin title($fontSize: 16px){
+@use '_portfolio';
+@use '_about';
+@use '_footer';
+
+@mixin title($fontSize: 16px) {
     font-size: $fontSize;
 }
+
 
 @mixin titleSection {
     text-align: center;
     padding-top: 60px;
+    padding-bottom: 40px;
 
     h2 {
         font-size: 2.5rem;
@@ -36,6 +42,26 @@
         border-radius: 50%;
         background-color: variaveis.$corPrincipal;
     }
+}
+
+@mixin button {
+    background-color: #222;
+    color: variaveis.$corTextoPrincipal;
+    padding: 20px 40px;
+    border: 1px solid #333;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin-top: 40px;
+    width: 250px;
+    justify-self: center;
+    &:hover {
+        background-color: variaveis.$corPrincipal;
+
+    }
+}
+
+.btn {
+    @include button()
 }
 
 .titleSection {
