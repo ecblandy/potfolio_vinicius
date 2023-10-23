@@ -41,17 +41,15 @@ main {
         flex-direction: column;
         padding: 60px;
         gap: 40px;
-
         @media (max-width:990px) {
             flex-direction: column;
-            align-items: center;
         }
 
         img {
             cursor: pointer;
-            max-width: 300px;
+            max-width: 250px;
             width: 100%;
-            height: 600px;
+            height: 450px;
             border-radius: 50%;
             object-fit: cover;
             filter: blur(0);
@@ -80,7 +78,8 @@ main {
                 width: 700px;
                 margin-top: 50px;
                 @media (max-width: 990px){
-                    width: 350px;
+                    width: 310px;
+                    text-align: start;
                 }
                 h3 {
                     font-size: 1.7rem;
@@ -88,6 +87,7 @@ main {
 
                     @media (max-width:990px) {
                         text-align: center;
+                        font-size: 1.4rem;
                     }
 
                     &::after {
@@ -98,17 +98,19 @@ main {
                         content: '';
                         display: flex;
                         border-radius: 5px;
-
+                        @media (max-width: 990px){
+                            width: 100%;
+                        }
                     }
                 }
 
                 p {
-                    font-size: 1.2rem;
-
+                    font-size: 1rem;
+                    line-height: 1.6;
                     @media (max-width:990px) {
                         padding-top: 20px;
-                        text-align: center;
                         font-size: 0.8rem;
+                        color: #acacac;
                     }
                 }
             }
@@ -118,27 +120,27 @@ main {
 
         &__info {
             margin-top: 30px;
-           display: grid;
-           grid-template-columns: repeat(3, 1fr);
-           gap: 20px;
-           text-align: center;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
 
             @media (max-width:990px) {
-                grid-template-columns: 1fr;
+                flex-direction: column;
             }
 
             i {
                 color: variaveis.$corPrincipal;
                 display: inline-block;
                 padding-right: 15px;
-                font-size: 1.5rem;
+                font-size: 1rem;
                 @media (max-width:990px) {
                     font-size: 0.8rem;
                 }
             }
 
             p {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 color: #fff;
                 @media (max-width:990px) {
                     font-size: 0.8rem;
