@@ -66,12 +66,41 @@ buttons.forEach(button => {
     })
 })
 
+let itemAtual = 4; // Inicie com 4 para mostrar os primeiros 4 itens
+const boxes = [...document.querySelectorAll('.cardTech__box__item')];
+const buttonTech = document.getElementById('techButton');
 
-// if (alvo.id === 'todos' ||
-//             (alvo.id === 'frontend' && item.classList.contains('frontend')) ||
-//             (alvo.id === 'backend' && item.classList.contains('backend'))) {
-//                 // Adicione a animação de novo
-                
-//             } else {
-                
-//             }
+// Função para mostrar os próximos 4 itens
+function mostrarProximosItens() {
+    for (let i = itemAtual; i < itemAtual + 4 && i < boxes.length; i++) {
+        boxes[i].style.display = 'grid';
+        boxes[i].style.animation = 'fadeCard forwards .8s ease-in';
+    }
+    itemAtual += 4;
+
+    if (itemAtual >= boxes.length) {
+        buttonTech.textContent = 'Recolher Card';
+    }
+}
+
+// Função para recolher os itens
+function recolherItens() {
+    for (let i = 4; i < boxes.length; i++) {
+        boxes[i].style.display = 'none';
+    }
+    itemAtual = 4;
+    buttonTech.textContent = 'Carregar Mais';
+    window.scrollTo(0,890)
+}
+
+// Adicionar evento de clique ao botão
+buttonTech.addEventListener('click', () => {
+    if (itemAtual >= boxes.length) {
+        recolherItens();
+    } else {
+        mostrarProximosItens();
+    }
+});
+
+recolherItens();
+

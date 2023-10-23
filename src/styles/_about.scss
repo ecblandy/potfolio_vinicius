@@ -54,7 +54,10 @@ main {
             border-radius: 4px;
             filter: blur(0);
             animation: ladoSecao .5s ease-in-out forwards;
-
+            @media (max-width: 700px){
+                height: 400px;
+                object-fit: contain;
+            }
             &:hover {
                 transition: .5s ease-in;
                 filter: blur(1px);
