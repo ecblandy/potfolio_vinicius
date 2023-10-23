@@ -331,7 +331,7 @@
         <button class="btn" id="techButton">Carregar mais</button>
     </section>
 
-    <main>
+    <main id="about">
         <div class="sobre__titulo">
             <h2>Sobre mim</h2>
             <p>Perfil profissional - Aqui está tudo sobre mim.</p>
@@ -341,33 +341,41 @@
                 <span></span>
             </div>
         </div>
-        <article aria-label="seção sobre mim" class="sobre">
-            <img src="./public/img/myphoto2.jpg"
-                alt="">
-
+        <article aria-label="seção sobre mim" class="sobre">         
             <div class="sobre__conteudo">
+                <img src="./public/img/myphoto2.jpg" alt="">
                 <div class="sobre__conteudo__texto">
                     <h3>Eu sou Vinícius Blandy</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ipsa quasi aliquid, fugiat
-                        recusandae voluptatem exercitationem alias, culpa hic odio adipisci tempore officia similique
-                        perferendis fugit. Dolore, dolor deleniti. Ut.</p>
-                </div>
+                    <p>
+                        Desde a infância, sempre nutri uma profunda paixão pela tecnologia. Meu primeiro contato com a
+                        programação ocorreu por meio de recursos disponíveis no YouTube, e desde então, desenvolvi um
+                        interesse profundo por esta área. Atualmente, estou matriculado na EBAC - Escola Britânica de
+                        Artes Criativas e Tecnologia, onde curso Engenharia Front-End. Sou um profissional altamente
+                        proativo e dedicado em todas as minhas atividades.
 
-                <div class="sobre__conteudo__info">
-                    <p><i class="fa-solid fa-calendar-days"></i>Data de nascimento: 08 março 1999.</p>
-                    <p><i class="fa-sharp fa-solid fa-laptop-code"></i>Freelance: disponível.</p>
-                    <p><i class="fa-solid fa-location-dot"></i>Endereço: Salvador-BA, Brasil.</p>
-                    <p><i class="fa-solid fa-solid fa-globe"></i>Línguas faladas: Português e Inglês.</p>
-                    <p><i class="fa-solid fa-flag"></i>Nacionalidade: Brasileiro.</p>
-                    <p><i class="fa-solid fa-phone-volume"></i>Telefone: 71994027893</p>
-                    <p><i class="fa-solid fa-envelope"></i>Email: devblandy@hotmail.com</p>
-                </div>
+                        Adicionalmente, tenho explorado outras áreas relacionadas à programação, em particular o
+                        Backend. No momento, estou aprimorando minhas habilidades no uso de tecnologias como Node.js e
+                        estudando aspectos relacionados ao MySQL, Sequelize, Express, entre outras tecnologias
+                        relevantes. Após obter essa oportunidade de emprego, planejo seguir minha educação formal
+                        cursando uma graduação em Análise e Desenvolvimento de Sistemas.
 
+                    </p>
+                </div>
             </div>
+            <div class="sobre__info">
+                <p><i class="fa-solid fa-calendar-days"></i>Data de nascimento: 08 março 1999.</p>
+                <p><i class="fa-sharp fa-solid fa-laptop-code"></i>Freelance: disponível.</p>
+                <p><i class="fa-solid fa-location-dot"></i>Endereço: Salvador-BA, Brasil.</p>
+                <p><i class="fa-solid fa-solid fa-globe"></i>Línguas faladas: Português e Inglês.</p>
+                <p><i class="fa-solid fa-flag"></i>Nacionalidade: Brasileiro.</p>
+                <p><i class="fa-solid fa-phone-volume"></i>Telefone: 71994027893</p>
+                <p><i class="fa-solid fa-envelope"></i>Email: devblandy@hotmail.com</p>
+            </div>    
 
+            
         </article>
     </main>
-    
+
     <section class="portfolio" id="projects">
         <div class="titleSection">
             <h2>Projetos</h2>
@@ -388,45 +396,48 @@
         <div class="portfolio__armazenamento">
             <ul class="portfolio__armazenamento__list">
                 <li class="portfolio__armazenamento__list__item frontend active">
-                    <a href="#"><img src="https://images.unsplash.com/photo-1697179419515-36178e22626e?auto=format&fit=crop&q=80&w=1483&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt=""></a>
-                        <div class="conteudo">
-                            <h2>Disney +</h2>
-                            <p>Desenvolvi um clone da Disney + ultilizando sass, gulp, javascript.</p>
-                            <a href="#">Link Github</a>
-                        </div>
-                        <div class="conteudo__info">
-                            <span><i class="fa-solid fa-calendar-days"></i>10/08/2023</span>
-                            <span><i class="fa-solid fa-user"></i>Vinícius Blandy</span>
-                        </div>
+                    <a href="#"><img
+                            src="https://images.unsplash.com/photo-1697179419515-36178e22626e?auto=format&fit=crop&q=80&w=1483&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""></a>
+                    <div class="conteudo">
+                        <h2>Disney +</h2>
+                        <p>Desenvolvi um clone da Disney + ultilizando sass, gulp, javascript.</p>
+                        <a href="#">Link Github</a>
+                    </div>
+                    <div class="conteudo__info">
+                        <span><i class="fa-solid fa-calendar-days"></i>10/08/2023</span>
+                        <span><i class="fa-solid fa-user"></i>Vinícius Blandy</span>
+                    </div>
                 </li>
 
                 <li class="portfolio__armazenamento__list__item frontend active">
-                    <a href="#"><img src="https://images.unsplash.com/photo-1697179419515-36178e22626e?auto=format&fit=crop&q=80&w=1483&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt=""></a>
-                        <div class="conteudo">
-                            <h2>Calculadora IMC</h2>
-                            <p>Desenvolvi esse projeto ultilizando React, calcula o IMC e exibe na tabela.</p>
-                            <a href="#">Link Github</a>
-                        </div>
-                        <div class="conteudo__info">
-                            <span><i class="fa-solid fa-calendar-days"></i>10/08/2023</span>
-                            <span><i class="fa-solid fa-user"></i>Vinícius Blandy</span>
-                        </div>
+                    <a href="#"><img
+                            src="https://images.unsplash.com/photo-1697179419515-36178e22626e?auto=format&fit=crop&q=80&w=1483&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""></a>
+                    <div class="conteudo">
+                        <h2>Calculadora IMC</h2>
+                        <p>Desenvolvi esse projeto ultilizando React, calcula o IMC e exibe na tabela.</p>
+                        <a href="#">Link Github</a>
+                    </div>
+                    <div class="conteudo__info">
+                        <span><i class="fa-solid fa-calendar-days"></i>10/08/2023</span>
+                        <span><i class="fa-solid fa-user"></i>Vinícius Blandy</span>
+                    </div>
                 </li>
 
                 <li class="portfolio__armazenamento__list__item frontend active">
-                    <a href="#"><img src="https://images.unsplash.com/photo-1697179419515-36178e22626e?auto=format&fit=crop&q=80&w=1483&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt=""></a>
-                        <div class="conteudo">
-                            <h2>Calculadora IMC</h2>
-                            <p>Desenvolvi esse projeto ultilizando React, calcula o IMC e exibe na tabela.</p>
-                            <a href="#">Link Github</a>
-                        </div>
-                        <div class="conteudo__info">
-                            <span><i class="fa-solid fa-calendar-days"></i>10/08/2023</span>
-                            <span><i class="fa-solid fa-user"></i>Vinícius Blandy</span>
-                        </div>
+                    <a href="#"><img
+                            src="https://images.unsplash.com/photo-1697179419515-36178e22626e?auto=format&fit=crop&q=80&w=1483&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""></a>
+                    <div class="conteudo">
+                        <h2>Calculadora IMC</h2>
+                        <p>Desenvolvi esse projeto ultilizando React, calcula o IMC e exibe na tabela.</p>
+                        <a href="#">Link Github</a>
+                    </div>
+                    <div class="conteudo__info">
+                        <span><i class="fa-solid fa-calendar-days"></i>10/08/2023</span>
+                        <span><i class="fa-solid fa-user"></i>Vinícius Blandy</span>
+                    </div>
                 </li>
 
             </ul>
