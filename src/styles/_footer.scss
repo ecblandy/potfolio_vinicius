@@ -1,5 +1,6 @@
+@use '_variaveis';
 .footer {
-    background-color: #0f0000;
+    background-color: #0b0c0e;
     padding: 30px;
 
     &__sociais{
@@ -18,21 +19,22 @@
             width: 200px;
             bottom: -30px;
             background-color: rgb(255, 255, 255);
+            border-radius: 5px;
         }
 
         li {
             background-color: black;
             border-radius: 50%;            
             border: 1px solid #fff;
-            padding: 30px;
+            padding: 20px;
             &:hover{
                 transition: .3s ease-in-out;
                 cursor: pointer;
-                background-color: red;
+                background-color: variaveis.$corPrincipal;
             }
 
             i {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
         }
     }
@@ -41,6 +43,6 @@
         text-align: center;
         color: #fff;
         margin: 90px auto;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
